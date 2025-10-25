@@ -10,8 +10,6 @@ const adicionarNota = (event) => {
         const tituloNotaRepetido = todasNotas.some((nota) => {
             return nota.titulo.toLowerCase() === inputNotaUsuario.value.toLowerCase();
         })
-
-        console.log(tituloNotaRepetido);
         
         if (tituloNotaRepetido) {
             alert("ERRO! Título de Nota já Existente.")
